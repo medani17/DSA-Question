@@ -8,4 +8,26 @@ int majorityElement(vector<int>& nums) {
     return nums[n/2];
 }
 
+OR 
+
+int majorityElement(vector<int>& nums) {
+    int k = nums[0];
+    int cnt = 1;
+    for(int i=1; i<nums.size(); i++){
+        if(cnt == 0){
+        cnt++;
+        k = nums[i];
+        }
+        else if(k == nums[i]){
+        cnt++;
+        }
+        else{
+        cnt--;
+        }
+}
+return k;
+}
+
+ 
+
 
