@@ -1,0 +1,15 @@
+// Input = {50,20,40,60,10,30}
+// output = 10,20,30,40,50,60
+
+code:
+void iSort(int arr[],int n){
+    for(inti=1;i<n; i++){
+    int key = arr[i];
+    int j = i-1;
+    while(j>=0 && arr[j]>key){
+    arr[j+1] = arr[j]
+    j--;
+    }
+    arr[j+1] = key;
+    }
+}
