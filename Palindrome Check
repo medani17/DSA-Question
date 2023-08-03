@@ -1,0 +1,27 @@
+// Input: str = "ABCDCBA"
+// Output: true
+
+code:
+bool palindrome(string str){
+ string res = str;
+revese(res.begin(),res.end());
+if(res == str){
+ return true;
+ } else{ 
+return false;
+}
+}
+
+OR 
+bool palindrome(string str){
+  int begin = 0;
+  int end = str.length()-1;
+  
+  while(begin<end){
+  if(str[begin] != str[end]){
+  return false;
+  begin++;
+  end--;
+  }
+  return true;
+}
