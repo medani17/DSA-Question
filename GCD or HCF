@@ -1,0 +1,11 @@
+// Input: num1 = 4, num2 = 8
+// Output: 4
+
+code:
+int calcGCD(int n, int m){
+    // Write your code here.
+    if(m==0){
+        return n;
+    }
+    return calcGCD(m, n%m);
+}
